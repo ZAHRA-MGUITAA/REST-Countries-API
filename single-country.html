@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="single-country" onload="getCountryInfo()">
+    <div class="header">
+        <div class="container">
+          <h4 class="title">where is in the world ?</h4>
+          <div class="darkmode">
+            <i class="fa-solid fa-moon"></i>
+            <p>Dark mode</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="back">
+            <button onclick="goBack()"><i class="fa-solid fa-arrow-left"></i> back</button>
+        </div>
+        <div class="main">
+            <div class="flag">
+                <!-- <img src="./design/sr.png" alt=""> -->
+            </div>
+            <div class="infos">
+                <h4 class="name">Belguim</h4>
+                <div class="details">
+                    <div class="col1">
+                        <p id="nativename">Native name : <span>Belgie</span></p>
+                        <p id="population">population : <span>4525852</span></p>
+                        <p id="region">Region : <span>Europe</span></p>
+                        <p id="subregion">Sub region : <span>Western europe</span></p>
+                        <p id="capital">Capital : <span>Bresell</span></p>
+                    </div>
+                    <div class="col2">
+                        <p id="domain"> Top level domain : <span>.be</span></p>
+                        <p id="currencies">Currencies : <span>Euro</span></p>
+                        <p id="Language">Language : <span></span></p>
+                    </div>
+                </div>
+                <div class="borders">
+                    <h4>Border countries :</h4>
+                    <div class="borders-countries">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+      <script src="./script.js"></script>
+</body>
+</html>

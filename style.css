@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 930px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 360px) {
+  .container {
+    width: 340px;
+  }
+}
+@media (min-width: 1202px) {
+  .container {
+    width: 1220px;
+  }
+}
+
+
+body {
+  background: hsl(0, 0%, 98%);
+}
+.darkmode {
+  display: flex;
+}
+
+.header {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.countries {
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.country {
+  width: 259px;
+  height: 300px;
+  margin: 35px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.country-infos {
+  background: white;
+  margin: 0;
+  padding: 30px 10px;
+  height: 100%;
+}
+
+.country img {
+  width: 259px;
+  min-height: 150px;
+}
+
+.country-infos h6.country-name {
+  font-size: 18px;
+}
+
+.country-infos .population,
+.country-infos .region,
+.country-infos .capital {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.filter-search {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  margin: 30px 0 0;
+}
+.search {
+  border: none;
+  padding: 10px 10px;
+  background: white;
+  width: 315px;
+}
+
+.search input[type="text"] {
+  border: none;
+  outline: none;
+}
+.filter select {
+  width: 180px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.single-country .main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.single-country .flag {
+  width: 100%;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.single-country .infos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.single-country h4.name {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.single-country .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-country .col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single-country .col2 {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.flag img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body.single-country {
+  background: white;
+}
+
+.back button {
+  width: 100px;
+  height: 30px;
+  background: white;
+  border: none;
+  box-shadow: 0px 0px 0px 1px lightgray;
+}
+
+.back {
+  margin-top: 30px;
+}
+
+.borders {
+  margin-top: 30px;
+  display: flex;
+}
+
+.borders-countries {
+  display: flex;
+  justify-content: space-around;
+}
+
+.borders-countries p,
+.borders h4 {
+  margin-right: 10px;
+}
+
+.borders-countries p {
+  background: white;
+  padding: 2px 10px;
+  box-shadow: 1px 1px 1px 1px hsl(0, 0%, 98%);
+}
+
+@media (max-width: 630px) {
+  .countries {
+    display: block;
+  }
+
+  .country {
+    width: 100%;
+    height: auto;
+  }
+  .country img {
+    width: 100%;
+  }
+  .filter-search {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80px;
+    align-items: baseline;
+  }
+  .single-country .main {
+    flex-direction: column;
+  }
+
+  .single-country .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .borders-countries {
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .borders {
+    flex-direction: column;
+  }
+}
